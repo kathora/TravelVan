@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <title>Travel Agency Site</title>
+</head>
+<body>
+    <!--Landing Page-->
+    <div class="container">
+        <div class="topNavbar">
+            <div class="logo animate">
+                <h1>TravelVan</h1>
+            </div>
+            <nav>
+                <ul class="animate">
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Places</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+            <a href="#" class="btn light animate">Sign in</a>
+        </div>
+
+        <!--Content-->
+        <div class="content">
+            <div class="head">
+                <div class="text-overlay"></div>
+                <div class="text">
+                    <h1>Destinations</h1>
+                </div>
+            </div>
+             <div class="para">
+                 <div class="text"><p>Search Your Future Dream Place</p></div>
+            </div>
+            
+        </div>
+
+        <!--Social media icons-->
+        <div class="social animate">
+            <ul>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-youtube"></i></li>
+                <li><i class="fab fa-facebook"></i></li>
+            </ul>
+        </div>
+
+        <div class="add animate">
+            <p>&copy 2020 TravelVan</p>
+        </div>
+
+        <div class="main-overlay">
+            <p>Destination</p>
+        </div>
+        
+    </div>
+
+    <!--Overlay Zone-->
+    <div class="bg">
+        <div class="bg-overlay"></div>
+    </div>
+
+    <div class="main-overlay">
+        <p>Destination</p>
+    </div>
+
+
+  
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+<script>
+
+    gsap.to('.main-overlay', 1.5, {
+        height: 0,
+        duration: 1,
+        delay: .2,
+        ease: Power4.in
+    });
+
+    gsap.to('.main-overlay p', 1.5, {
+        opacity: 0,
+        duration: 1,
+        delay: .2
+    });
+
+    gsap.to('.text-overlay', 1.5, {
+        left: '100%',
+        duration: .5,
+        delay: .1
+    });
+
+    gsap.to('.bg-overlay', 1.5, {
+        width:'50%',
+        duration: .5,
+        delay: 1.5
+    });
+
+    gsap.to('.para .text', 1.5, {
+        top:0,
+        duration: .5,
+        delay: 1.8
+    });
+
+    gsap.to('.head', 1.5, {
+        y:0,
+        duration: .5,
+        delay: 1.8
+    });
+
+    gsap.to('.animate', 1.5, {
+        x:0,
+        y:0,
+        scale:1,
+        opacity:1,
+        duration: .5,
+        delay: 2.2
+    });
+</script>
+
+</body>
+</html>
+
